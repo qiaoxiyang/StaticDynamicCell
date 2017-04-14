@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XYTableViewCell" rowHeight="280" id="ktq-Eu-jUX" customClass="XYTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ktq-Eu-jUX" id="PTm-oy-tKq">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="imageView:yL5-Am-hNT:image" translatesAutoresizingMaskIntoConstraints="NO" id="yL5-Am-hNT">
+                        <rect key="frame" x="15" y="15" width="22" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6l-6l-rfe">
+                        <rect key="frame" x="47" y="20" width="234" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-34-cX2">
+                        <rect key="frame" x="47" y="38" width="313" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="广东省 佛山市">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFb-IS-04x">
+                        <rect key="frame" x="47" y="76" width="313" height="188.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="251" text="2017-02-08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irc-FF-XB6">
+                        <rect key="frame" x="286" y="21" width="74" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DFb-IS-04x" secondAttribute="bottom" constant="15" id="1Hz-xX-G7s"/>
+                    <constraint firstItem="Y6l-6l-rfe" firstAttribute="leading" secondItem="yL5-Am-hNT" secondAttribute="trailing" constant="10" id="3SZ-6R-ohw"/>
+                    <constraint firstItem="DFb-IS-04x" firstAttribute="top" secondItem="bbD-34-cX2" secondAttribute="bottom" constant="10" id="8kh-N0-Aaf"/>
+                    <constraint firstItem="yL5-Am-hNT" firstAttribute="top" secondItem="PTm-oy-tKq" secondAttribute="top" constant="15" id="91Q-8z-i0q"/>
+                    <constraint firstItem="yL5-Am-hNT" firstAttribute="leading" secondItem="PTm-oy-tKq" secondAttribute="leading" constant="15" id="HYg-gm-qYj"/>
+                    <constraint firstItem="bbD-34-cX2" firstAttribute="top" secondItem="Y6l-6l-rfe" secondAttribute="bottom" id="M9C-2b-2ow"/>
+                    <constraint firstAttribute="trailing" secondItem="bbD-34-cX2" secondAttribute="trailing" constant="15" id="MGh-Pi-pZ8"/>
+                    <constraint firstItem="DFb-IS-04x" firstAttribute="leading" secondItem="bbD-34-cX2" secondAttribute="leading" id="MMA-fC-YHc"/>
+                    <constraint firstItem="Irc-FF-XB6" firstAttribute="leading" secondItem="Y6l-6l-rfe" secondAttribute="trailing" constant="5" id="XLD-gC-cEP"/>
+                    <constraint firstItem="Irc-FF-XB6" firstAttribute="centerY" secondItem="Y6l-6l-rfe" secondAttribute="centerY" id="Zki-EI-Y0q"/>
+                    <constraint firstItem="Y6l-6l-rfe" firstAttribute="top" secondItem="PTm-oy-tKq" secondAttribute="top" constant="20" id="Zqw-9f-iKd"/>
+                    <constraint firstItem="bbD-34-cX2" firstAttribute="leading" secondItem="Y6l-6l-rfe" secondAttribute="leading" id="oSJ-i8-I9x"/>
+                    <constraint firstItem="DFb-IS-04x" firstAttribute="trailing" secondItem="bbD-34-cX2" secondAttribute="trailing" id="vcX-cW-kn5"/>
+                    <constraint firstAttribute="trailing" secondItem="Irc-FF-XB6" secondAttribute="trailing" constant="15" id="wv6-jO-SHh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="400" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="img_avatar" destination="yL5-Am-hNT" id="uaL-HG-3Oi"/>
+                <outlet property="lab_content" destination="DFb-IS-04x" id="gPg-Jm-vRR"/>
+                <outlet property="lab_name" destination="Y6l-6l-rfe" id="ysJ-TO-7Bz"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imageView:yL5-Am-hNT:image" width="22" height="22">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7MjIsIDIyfdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
+HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPERAuTU0AKgAAB5gAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAABLi4uMoGBgYbGxsbS6urq9+rq6vfGxsbSgYGBhi4uLjIAAAABAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9PT1Bra2ttezs7Pb6+vr/9fX1
+//Ly8v/y8vL/9fX1//r6+v/s7Oz2ra2ttT09PUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAYGBgiAgICG7+/v9/z8/P/19fX/8vLy//Ly8v/y8vL/8vLy//Ly8v/y8vL/9fX1//z8/P/v7+/3gICA
+hgYGBggAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBwmXl5eg/v7+//X19f/y8vL/8vLy//Ly8v/y8vL/8vLy
+//Ly8v/y8vL/8vLy//Ly8v/y8vL/9fX1//7+/v+Xl5egBwcHCQAAAAAAAAAAAAAAAAAAAAB/f3+H/v7+
+//T09P/y8vL/8vLy//Ly8v/y8vL/8vLy//Ly8v/y8vL/8vLy//Ly8v/y8vL/8vLy//Ly8v/09PT//v7+
+/39/f4cAAAAAAAAAAAAAAAA8PDxA7+/v+PX19f/y9PT/8/b1//Ly8v/y8vL/8vLy//Ly8v/y8vL/8vLy
+//Ly8v/y8vL/8vLy//Ly8v/y8vL/8vLy//X19f/v8PD4PD4+QAAAAAAEBAQErKyst/7+/v/y9PT/8Ofn
+/+3X1//0+ff/8vLy//Ly8v/y9fX/9Pn3//Ly8v/y8vL/8vLy//Ly8v/y9PT/9Pn5//L19f/y9fX/9dfZ
+/51jZbcDAQEELi4uMuzs7Pb19fX/9Pv7/9qFif/UaW7/7dvc//Ly8v/0+vr/5Kyu/9+Wmv/0+Pf/8vLy
+//Ly8v/09vb/8OXl/9h5f//u3d//9Pj3/+Wsrv/Sdnv2KhoaMn9/f4f6+vr/8vLy//T9/P/PUln/yDY/
+/81JUv/x6+v/9fv7/+SusP+/FCP/6cbH//X+/v/y9PT/8vLy/9BYX//AFST/6cXH//T6+v/s1tf/78bJ
+/3xxcYfGxsbS9fX1//L09P/kr7D/vxYk/74NH//emJv/9Pr6//X////ipqj/wyQv/9Rqb//owML/9f//
+/9l+hP/CHyv/5ru8//T5+f/0+/v/9Pn5//X29v/GyMjS6enp9vT29v/u29v/xCgy/8UqNf/mv8H/9Pr6
+//L09P/owMP/0Fti/9Rpb//PVVz/6L/C/96YnP/DIy//6L/A//X////x7Oz/4Jic/+rMzv/0+Pf/6urq
+9+rq6vf09fX/7t3e/81JUv/RXGP/5rm7//X+/P/iqq3/xSw3/8QjLv/LRU3/9Pr6//Hv7//JN0H/wh0p
+/9Vtc//mt7r/yjxF/74NHv/krbD/9fr6/+rq6vfHx8fT9v38/+Svs//FLDf/xjA6/+WxtP/2////7djZ
+/+Koq//TYmj/wyMu/9FfZf/u4uL/7dbX/8o7Rf/elZn/5ra5/78UIv/Yd33/9Pb2//X19f/Hx8fTgICA
+iPv////s0dP/02Jo/8MgLf/LQ0v/3pOY//T6+v/y8fH/yThB/92QlP/GMDr/8OPl//Dn6f/LREz/6cfI
+/9BYX/++DR7/1Wlv//L19f/6+vr/gICAiC8wMDPt7u725q6y/85QV//FKjX/3IiN/8UuOP/s09T/1XB1
+/81KUv/KPUX/02Vq//T5+f/x8PD/0Fhf/+rIyv/mu73/6cXH//Lx8f/09fX/7e3t9i8vLzMDBQUFkzc7
+uNE6RP/ah4z/yDY//+zR0//t29z/3pWY/92Pk//09vb/2Hh9/+KprP/1////4Jmd/8MhLf/t2dv/9f37
+//T49//y8vL//Pz8/7CwsLgDAwMFAAAAADQRE0PpyMn6+P///+7g4f/y8PD/9Pb2//Lt7f/0+Pf/8vT0
+//P29v/y9PT/9Pb2/+nDxP/ksLT/8vLy//Ly8v/y8vL/9fX1//Hx8fo/Pz9DAAAAAAAAAAAABAQEg4aG
+if7+/v/09vb/8vLy//Ly8v/y8vL/8vLy//Ly8v/y8vL/8vLy//Ly8v/0+Pf/9Pr6//Ly8v/y8vL/9PT0
+//7+/v+BgYGJAAAAAAAAAAAAAAAAAAAAAAcHBwmampqj/v7+//X19f/y8vL/8vLy//Ly8v/y8vL/8vLy
+//Ly8v/y8vL/8vLy//Ly8v/y8vL/9fX1//////+ampqkBwcHCQAAAAAAAAAAAAAAAAAAAAAAAAAACQkJ
+CYSEhIrx8fH5/Pz8//X19f/y8vL/8vLy//Ly8v/y8vL/8vLy//Ly8v/19fX//Pz8//Hx8fmEhISKCAgI
+CgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQUFBRbGxsbju7u74+vr6//X19f/y8vL/8vLy
+//X19f/6+vr/7u7u+LGxsbhBQUFFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAACMjIyNoeHh4zOzs7Y7u7u++7u7vvOzs7Yh4eHjDIyMjYAAAACAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAA4BAAADAAAAAQAWAAABAQADAAAAAQAWAAABAgADAAAABAAACEYBAwADAAAAAQABAAAB
+BgADAAAAAQACAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQAWAAAB
+FwAEAAAAAQAAB5ABHAADAAAAAQABAAABUgADAAAAAQABAAABUwADAAAABAAACE6HcwAHAAAH2AAACFYA
+AAAAAAgACAAIAAgAAQABAAEAAQAAB9hhcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIAGQALABoAC2Fjc3BB
+UFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2RzY20AAAF4AAAFnGNwcnQA
+AAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdYWVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMA
+AAecAAAADmNoYWQAAAesAAAALGJUUkMAAAecAAAADmdUUkMAAAecAAAADmRlc2MAAAAAAAAAFEdlbmVy
+aWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAACgA
+AAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQAAAH+cHRCUgAAACYAAAIidWtVQQAAACoA
+AAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAAACIA
+AAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQAAANmZGVERQAAACwAAAOKa29LUgAAABYA
+AAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFKUAAAABoAAAPiZWxHUgAAACIAAAP8cHRQTwAAACYA
+AAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhUSAAAACQAAARsdHJUUgAAACIAAASQZmlGSQAAACgA
+AASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAAACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYA
+AAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAA
+UgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgA
+cgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgAdQBuAGcAUABlAHIAZgBpAGwAIABSAEcA
+QgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcA
+QgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMA
+IABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBCACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsA
+IABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbAXkBegF
+1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkAbABvACAAUgBHAEIAIABnAGUAbgBlAHIA
+aQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4A
+ZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgAIABSAEcAQgAg1QS4XNMMx3xmbpAaACAAUgBHAEIA
+IGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68D
+uwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUA
+ZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicO
+RA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIA
+LQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBvAGYAaQBsAFUA
+bgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4E
+RAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAAUgBHAEIAIAYnBkQGOQYnBkUARwBlAG4A
+ZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUg
+SW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAAAPNSAAEAAAABFs9YWVogAAAAAAAAdE0A
+AD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEB
+zQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD3AAAwGzSJSYnKFokY2xhc3Nu
+YW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMnKSpaTlNJbWFnZVJlcFhOU09iamVjdNIlJiwt
+V05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJheaMvLCrTMjMKNDU2V05TV2hpdGVcTlNDb2xvclNw
+YWNlRDAgMAAQA4AM0iUmODlXTlNDb2xvcqI4KtIlJjs8V05TSW1hZ2WiOypfEA9OU0tleWVkQXJjaGl2
+ZXLRP0BUcm9vdIABAAgAEQAaACMALQAyADcARgBMAFcAXgBlAHIAeQCBAIMAhQCKAIwAjgCXAJwApwCp
+AKsArQCyALUAtwC5ALsAvQDCANkA2wDdEQ8RFBEfESgROxE/EUoRUxFYEWARYxFoEXcRexGCEYoRlxGc
+EZ4RoBGlEa0RsBG1Eb0RwBHSEdUR2gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAABHcA
+</mutableData>
+        </image>
+    </resources>
+</document>
