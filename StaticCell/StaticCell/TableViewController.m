@@ -81,7 +81,8 @@
     }
     return [super tableView:tableView cellForRowAtIndexPath:indexPath];
 }
-
+//当覆盖了静态的cell数据源方法时需要提供一个代理方法。
+//因为数据源对新加进来的cell一无所知，所以要使用这个代理方法
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 1) {
         return [super tableView:tableView indentationLevelForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
@@ -89,25 +90,7 @@
     return [super tableView:tableView indentationLevelForRowAtIndexPath:indexPath];
 }
 
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return nil;
-}
-    
-- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
-    return nil;
-}
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
-    
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -117,10 +100,6 @@
     return 0;
 }
     
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0;
-}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -128,10 +107,6 @@
     return self.tableView.rowHeight;
 }
     
-- (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
-    return nil;
-}
 
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -152,7 +127,6 @@
         btn2.backgroundColor = [UIColor orangeColor];
         [btn2 setTitle:@"咨询" forState:UIControlStateNormal];
         [headerView addSubview:btn2];
-        
         
         return headerView;
     }
