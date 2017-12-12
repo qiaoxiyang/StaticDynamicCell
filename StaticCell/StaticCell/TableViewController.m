@@ -37,8 +37,8 @@
     
     self.tableView.tableFooterView=[UIView new];
     self.tableView.estimatedRowHeight = 200;
-    
-    
+ 
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 
